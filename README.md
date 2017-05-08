@@ -1,13 +1,10 @@
 ## GithubVisualizer
 
+This repository is based on (http://sourabhbajaj.com/GithubVisualizer/ to visualized the information of a repository:
+ - Commits (Number of commits)
+ - Users (Contribution to each repository)
+
 CS 7450: Visualization of a Github organization.
-
-### Team
-
-- Sourabh Bajaj
-- Anshul Bhatnagar
-- Samrat Ambadekar
-- Mudit Gupta
 
 ### Dependencies
 
@@ -18,14 +15,34 @@ CS 7450: Visualization of a Github organization.
 - Moment.js
 - Colorbox
 
-### Link
+### Original Repo
 [http://sourabhbajaj.com/GithubVisualizer/](http://sourabhbajaj.com/GithubVisualizer/)
 
-### Feedback
+### How to used:
 
-Please post issues to give your feedback about the project. 
+First Step:
 
-### License
+git clone the current repository
 
-MIT
+Second step: 
+
+Modify the script in the folder data_reading:
+   ReadData.py
+you need to update the variables with the corresponding values: 
+
+```
+GITHUB_CLIENTID = ''
+GITHUB_CLIENTSECRET = ''
+```
+
+Then you can run 
+   python ReadData.py
+
+In the folder of the project run the npm server: 
+
+http-server -c-1
+
+
+
+
 
